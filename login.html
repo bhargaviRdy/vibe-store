@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | VibeStore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <header class="header">
+        <h2 class="header--title">Vibe Store</h2>
+        <!-- <span class="header--search"> -->
+            <input class="header--search " type="text" name="search" id="" search>
+            
+        <!-- </span> -->
+    </header>
+    <div class="main">
+        <div class="login">
+            <div class="form">
+                <h3 class="form--title">Login</h3>
+                <label class="form--label" for="emailAddress">Email Address</label>
+                <input class="form--input" type="text" name="emailAddress" id="emailAddress">
+
+                <label class="form--label" for="passowrd">Password</label>
+                <input class="form--input" type="password" name="password" id="password">
+
+                
+                <div class="form--remember">
+                    <div class="checkbox-div">
+                        <input class="form--checkbox" type="checkbox" name="rememberMe" id="rememberMe">
+                        Remember Me 
+                    </div> 
+                    <a class="form--link fogotPassword" href="">Forgot Password?</a>
+                </div>
+
+                <button class="btn">Login</button>
+                <a class="form--link create-new-account" href="">Create New Account <i class="fas fa-chevron-right"></i> </a>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

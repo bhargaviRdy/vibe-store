@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #8e13fd;
+    --secondary-color: #d3f4fa;
+    --tertiary-color: whitesmoke;
+}
+
+* {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+	word-wrap: break-word;
+}
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr minmax(350px,1fr) 1fr;
+    grid-template-areas: "header header header"
+                         ". main ."
+}
+.header{
+    grid-area: header;
+    box-shadow: 0 8px 5px var(--tertiary-color);
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header--title, .form--title{
+    color: var(--primary-color);
+}
+.header--search{
+    border: 1pz solid var(--secondary-color);
+}
+.main{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+}
+.login{
+    width: 100%;
+    background: whitesmoke;
+    border-radius: 5px;
+}
+.form{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.form--title{
+    text-align: center;
+}
+.form--label, .form--input{
+    width: 100%;
+    border-radius: 0.3rem;
+    border: transparent;
+}
+.form--label{
+    margin: 0.8rem 0;
+}
+.form--input{
+    font-size: 1rem;
+    padding: 0.5rem;
+    outline-color: var(--primary-color);
+}
+.form--remember{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.8rem 0 0 0;
+    position: relative;
+}
+.form--checkbox{
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+}
+.form--checkmark:after{
+    left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+.btn{
+    width: 100%;
+    margin: 1rem 0;
+    color: whitesmoke;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 0;
+    background: var(--primary-color);
+}
+.form--link{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.create-new-account{
+    text-align: center;
+}
