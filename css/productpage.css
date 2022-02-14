@@ -69,6 +69,7 @@
         width: 100%;
         bottom: 0;
         z-index: 10;
+        height: auto;
     }
     .products{
         margin-left: 0;
