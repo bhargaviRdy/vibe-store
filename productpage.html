@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://vibe-ui-bhargavi.netlify.app/components/vibeui.css">
+    <link rel="stylesheet" href="./css/productpage.css">
+</head>
+<body>
+    <nav class="nav-bar p-3">
+        <div class="navbar--logo-title">
+            <div class="navbar--logo">
+                <img class="img-fluid" src="../images/logo.png" alt="">
+            </div>
+            <span class="text-lg navbar--title text-bold-weight"><span class="text-primary">Vibe Store</span></span>
+        </div>
+    
+        <div class="navbar--search">
+            <span class="searchbar-btn"><i class="fa fa-search"></i></span>
+            <input class="searchbar-input" type="text" name="search" id="navbar-search" placeholder="Search">
+        </div>
+    
+        <ul class="ul-none navbar--icons">
+            <li class="list-inline-item navbar--icon px-2">
+                <a href="" class="btn"><i class="fas fa-user"></i></a></li>
+            <li class="list-inline-item navbar--icon px-2">
+                <a href="" class="btn"><i class="fas fa-heart"></i></a></li>
+            <li class="list-inline-item navbar--icon px-2">
+                <a href="" class="btn"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="productsandfilters">
+        <div class="filters--banner">
+            <button class="btn filters--banner--btn">
+                <span class="h5">Filters</span>
+                <span class="text-right float-right"><i class="fas fa-chevron-up"></i></span>
+            </button>
+            
+        </div>
+         <div class="filters">
+            <form action="" id="filters">
+                <h5 class="filters-heading">Filters</h5>
+                <span class="filters--btns float-right">
+                    <button class="btn  p-2">Clear</button>
+                    <button class="btn text-primary p-2 text-primary">Apply</button>
+
+                    <button class="btn  filters--hide"><i class="fas fa-chevron-down"></i></button>
+                </span>
+
+                <p class="p-md">Price</p>
+                <label class="filters--pricelabel" for="filters--minprice">Min</label>
+                <label class="filters--pricelabel" for="filters--maxprice">Max</label>
+    
+                <input class="filters--priceinput" type="number" id="filters--minprice" value="500">
+                <input class="filters--priceinput" type="number" id="filters--maxprice" value="1500">
+    
+                <p class="p-md">Category</p>
+                <div class="pb-1">
+                    <input class="mr-3" type="checkbox" name="men" id="menCategory">Men 
+                </div>
+                <div class="pb-1">
+                    <input class="mr-3" type="checkbox" name="women" id="womenCategory">Women
+                </div>
+                <div>
+                    <input class="mr-3" type="checkbox" name="unisex" id="unisexCategory">Unisex
+                </div>
+    
+                <p class="p-md">Rating</p>
+                <div class="pb-1"><input class="mr-3" type="radio" name="stars" id="4starsandabove">4 Stars & above</div>
+                <div class="pb-1"><input class="mr-3" type="radio" name="stars" id="3starsandabove">3 Stars & above</div>
+                <div class="pb-1"><input class="mr-3" type="radio" name="stars" id="2starsandabove">2 Stars & above</div>
+                <div class="pb-1"><input class="mr-3" type="radio" name="stars" id="1starsandabove">1 Stars & above</div>
+
+                <p class="p-md">Sort by</p>
+                <div class="pb-1"><input class="mr-3" type="radio" name="sortby" id="price-lowtohigh">Price - Low to High</div>
+                <div><input class="mr-3" type="radio" name="sortby" id="price-hightolow">Price - High to Low</div>
+
+            </form>
+            
+        </div> 
+    
+        <div class="products">
+            <div class="card card-v flex flex-column py-2 px-2">
+                <img class="badge-container" src="../images/watch1.jpeg" alt="kids-dress">
+                <span class="badge badge-text bg-primary px-2 py-1">New</span>
+                <div class="card-content flex flex-column mx-2">
+                    <span class="h6">Kids Uniform <span class="  text-secondary float-right">
+                            <i class="fas fa-heart"></i></span> </span>
+                    <span class="">Boys Daily wear for neog camp</span>
+                    <p class="text-regular-weight my-1">Rs.899 <span class="text-secondary"><span
+                                class="text-strike-through">Rs.999</span><span
+                                class="text-primary">10%</span></span>
+                    </p>
+                    <button class="btn btn-primary my-1">
+                        <span class="mr-2"><i class="fas fa-shopping-cart"></i>Add to Card</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card card-v flex flex-column py-2 px-2">
+                <img class="badge-container" src="../images/watch1.jpeg" alt="kids-dress">
+                <span class="badge badge-text bg-primary px-2 py-1">New</span>
+                <div class="card-content flex flex-column mx-2">
+                    <span class="h6">Kids Uniform <span class="  text-secondary float-right">
+                            <i class="fas fa-heart"></i></span> </span>
+                    <span class="">Boys Daily wear for neog camp</span>
+                    <p class="text-regular-weight my-1">Rs.899 <span class="text-secondary"><span
+                                class="text-strike-through">Rs.999</span><span
+                                class="text-primary">10%</span></span>
+                    </p>
+                    <button class="btn btn-primary my-1">
+                        <span class="mr-2"><i class="fas fa-shopping-cart"></i>Add to Card</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card card-v flex flex-column py-2 px-2">
+                <img class="badge-container" src="../images/watch1.jpeg" alt="kids-dress">
+                <span class="badge badge-text bg-primary px-2 py-1">New</span>
+                <div class="card-content flex flex-column mx-2">
+                    <span class="h6">Kids Uniform <span class="  text-secondary float-right">
+                            <i class="fas fa-heart"></i></span> </span>
+                    <span class="">Boys Daily wear for neog camp</span>
+                    <p class="text-regular-weight my-1">Rs.899 <span class="text-secondary"><span
+                                class="text-strike-through">Rs.999</span><span
+                                class="text-primary">10%</span></span>
+                    </p>
+                    <button class="btn btn-primary my-1">
+                        <span class="mr-2"><i class="fas fa-shopping-cart"></i>Add to Card</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card card-v flex flex-column py-2 px-2">
+                <img class="badge-container" src="../images/watch1.jpeg" alt="kids-dress">
+                <span class="badge badge-text bg-primary px-2 py-1">New</span>
+                <div class="card-content flex flex-column mx-2">
+                    <span class="h6">Kids Uniform <span class="  text-secondary float-right">
+                            <i class="fas fa-heart"></i></span> </span>
+                    <span class="">Boys Daily wear for neog camp</span>
+                    <p class="text-regular-weight my-1">Rs.899 <span class="text-secondary"><span
+                                class="text-strike-through">Rs.999</span><span
+                                class="text-primary">10%</span></span>
+                    </p>
+                    <button class="btn btn-primary my-1">
+                        <span class="mr-2"><i class="fas fa-shopping-cart"></i>Add to Card</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card card-v flex flex-column py-2 px-2">
+                <img class="badge-container" src="../images/watch1.jpeg" alt="kids-dress">
+                <span class="badge badge-text bg-primary px-2 py-1">New</span>
+                <div class="card-content flex flex-column mx-2">
+                    <span class="h6">Kids Uniform <span class="  text-secondary float-right">
+                            <i class="fas fa-heart"></i></span> </span>
+                    <span class="">Boys Daily wear for neog camp</span>
+                    <p class="text-regular-weight my-1">Rs.899 <span class="text-secondary"><span
+                                class="text-strike-through">Rs.999</span><span
+                                class="text-primary">10%</span></span>
+                    </p>
+                    <button class="btn btn-primary my-1">
+                        <span class="mr-2"><i class="fas fa-shopping-cart"></i>Add to Card</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card card-v flex flex-column py-2 px-2">
+                <img class="badge-container" src="../images/watch1.jpeg" alt="kids-dress">
+                <span class="badge badge-text bg-primary px-2 py-1">New</span>
+                <div class="card-content flex flex-column mx-2">
+                    <span class="h6">Kids Uniform <span class="  text-secondary float-right">
+                            <i class="fas fa-heart"></i></span> </span>
+                    <span class="">Boys Daily wear for neog camp</span>
+                    <p class="text-regular-weight my-1">Rs.899 <span class="text-secondary"><span
+                                class="text-strike-through">Rs.999</span><span
+                                class="text-primary">10%</span></span>
+                    </p>
+                    <button class="btn btn-primary my-1">
+                        <span class="mr-2"><i class="fas fa-shopping-cart"></i>Add to Card</span>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
