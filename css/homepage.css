@@ -68,10 +68,6 @@
 .footer{
     background-color: var(--tertiary-color);
 }
-.link{
-    text-decoration: none;
-    color: black;
-}
 @media screen and (max-width: 950px ) {
     .categories{
         grid-template-columns: 1fr 1fr 1fr;
