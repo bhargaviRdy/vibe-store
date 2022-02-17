@@ -20,12 +20,12 @@
 }
 .login{
     width: 22rem;
-    background: whitesmoke;
+    background: var(--tertiary-color);
     border-radius: 5px;
 }
 .signup{
     width: 25rem;
-    background: whitesmoke;
+    background: var(--tertiary-color);
     border-radius: 5px;
     margin-top: 2rem;
 }
