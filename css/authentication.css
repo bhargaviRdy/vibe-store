@@ -13,7 +13,6 @@
     color: var(--navbar-icons-color);
 }
 .main{
-    grid-area: main;
     display: flex;
     height: 85vh;
     justify-content: center;
@@ -21,8 +20,14 @@
 }
 .login{
     width: 22rem;
-    background: whitesmoke;
+    background: var(--tertiary-color);
     border-radius: 5px;
+}
+.signup{
+    width: 25rem;
+    background: var(--tertiary-color);
+    border-radius: 5px;
+    margin-top: 2rem;
 }
 .form{
     padding: 1rem;
@@ -62,4 +67,8 @@
 }
 .create-new-account{
     text-align: center;
+}
+.checkbox-div{
+    display: flex;
+    align-items: center;
 }
