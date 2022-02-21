@@ -20,6 +20,11 @@
 .nav-bar .btn:hover{
     color: var(--primary-color);
 }
+.badge-number{
+    top: 0;
+    right: 0;
+    font-size: 0.75rem;
+}
 .products{
     display: flex;
     flex-wrap: wrap;

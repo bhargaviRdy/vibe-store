@@ -8,7 +8,7 @@
 .nav-bar{
     box-shadow: 0 8px 5px var(--tertiary-color);
 }
-.nav-bar a{
+.navbar--icons a{
     font-size: 1.2rem;
     color: var(--navbar-icons-color);
 }
